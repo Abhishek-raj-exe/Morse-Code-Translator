@@ -19,7 +19,7 @@ The code was possible with references to https://www.geeksforgeeks.org/morse-cod
 Your selection: "selection fm 1-3"
 Your message: "Message to be en/decrypted"
 ```
-1) For encryption enter the message alpha-num... (check for supported symbols list)
+1) For encryption enter the message alpha-num... [ check for supported symbols list ```list()``` ]
 eg:
 
 ```input (will be converted 2 lowercase for translation)```
