@@ -1,10 +1,10 @@
 # Morse-Code-Translator
- A morse code translator made using python classes
+ A morse code translator made using python classes.
 
 # About Project:
 
-The program translates alpha-numerical letters and sentences to morse code
-Few special char are also supported , spaces are represented by "/" for simplicity purposes
+The program translates alpha-numerical letters and sentences to morse code.
+Few special char are also supported , spaces are represented by "/" or "|" in morse.
 
 Classes were implemented for practice n learning purpose
 
@@ -22,23 +22,23 @@ Your message: "Message to be en/decrypted"
 1) For encryption enter the message alpha-num... [ check for supported symbols list `list()` ]
 eg:
 
-```input (will be converted 2 lowercase for translation)```
+input (will be converted 2 lowercase for translation)
 ```
 Your message: Who.. me?
 ```
-```output```
+output
 ```
 .-- .... --- .-.-.- .-.-.- / -- . ..--..
 ```
 
-2) For decryption enter the message in morse...(enter every letter with space " " & a word space as "/")
+2) For decryption enter the message in morse...(enter every letter with space " " & a word space as "/" or "|")
 eg:
 
-```input```
+input
 ```
 Your message: .. -- / .--- ..- ... - / .- / --. ..- -.-- / .-- .... --- ... / .... . .-. --- / ..-. --- .-. / ..-. ..- -. .-.-.- .-.-.- .-.-.- .-.-.- 
 ```
-```output (will always be in lowercase)```
+output (will always be in lowercased)
 ```
 im just a guy whos hero for fun....
 ```
