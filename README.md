@@ -43,7 +43,7 @@ Your message: .. -- / .--- ..- ... - / .- / --. ..- -.-- / .-- .... --- ... / ..
 im just a guy whos hero for fun....
 ```
 
-```The message loop can be broken by `back()` as input &takes back to selection menu or `ex()` to directly exit from loop...`list()` shows the list supported letters & symbols```
+The message loop can be broken by `back()` as input &takes back to selection menu or `ex()` to directly exit from loop...`list()` shows the list supported letters & symbols
 
 Note: the intro/outro execution can be disabled by commenting out [exit_() on line 82 and 87 & intro on line 66] for quick translation
 
