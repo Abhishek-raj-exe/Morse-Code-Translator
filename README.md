@@ -19,7 +19,7 @@ The code was possible with references to https://www.geeksforgeeks.org/morse-cod
 Your selection: "selection fm 1-3"
 Your message: "Message to be en/decrypted"
 ```
-1) For encryption enter the message alpha-num... [ check for supported symbols list ```list()``` ]
+1) For encryption enter the message alpha-num... [ check for supported symbols list `list()` ]
 eg:
 
 ```input (will be converted 2 lowercase for translation)```
@@ -43,7 +43,7 @@ Your message: .. -- / .--- ..- ... - / .- / --. ..- -.-- / .-- .... --- ... / ..
 im just a guy whos hero for fun....
 ```
 
-```The message loop can be broken by "back()" as input...takes back to selection menu or ex() to directly exit from loop```
+```The message loop can be broken by ```back()``` as input &takes back to selection menu or ```ex()``` to directly exit from loop...```list()``` shows the list supported letters & symbols```
 
 Note: the intro/outro execution can be disabled by commenting out [exit_() on line 82 and 87 & intro on line 66] for quick translation
 
