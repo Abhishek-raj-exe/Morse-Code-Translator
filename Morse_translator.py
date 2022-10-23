@@ -23,7 +23,6 @@ class Morse:
         '@':'.--.-.',   
 
         ' ': '/',   ' ': '|', #for space
-        ')':'-.--.-',' ': '/'
     }
 
     Key_list = list(M_dict.keys())
