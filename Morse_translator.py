@@ -15,9 +15,15 @@ class Morse:
         '2':'..---', '3':'...--','4':'....-',
         '5':'.....', '6':'-....','7':'--...',
         '8':'---..', '9':'----.','0':'-----',
+        
         ',':'--..--', '.':'.-.-.-','?':'..--..',
         '/':'-..-.', '-':'-....-','(':'-.--.',
-        ')':'-.--.-',' ': '/'
+        ')':'-.--.-','&':'.-...', ':':'---...', 
+        ';':'-.-.-.','=':'-...-', '+':'.-.-.', 
+        '-':'-....-','_':'..--.-', '"':'.-..-.',
+        '@':'.--.-.',   
+        
+        ' ': '/',   ' ': '|', #for space
     }
 
     Key_list = list(M_dict.keys())
@@ -85,6 +91,10 @@ while wait is not True:
             p = Morse(U_input) ; Morse.enc_mes = ""
             if  U_input == "ex()":
                 exit_()
+            elif U_input == "list()":
+                print("\n-----Valid input list-----\n")
+                for key,value in Morse.M_dict.items():
+                    print('" " => / or |') if key == " " else print(key,' => ',value)
             elif U_input == "back()": print("\n\tJust a sec"),(sleep(1));break
             elif select == 1:
                 p.Encrypt()
