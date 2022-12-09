@@ -1,4 +1,5 @@
-from time import sleep ; import random ; import pandas as pd ; import re ; import requests ; import io
+from time import sleep ; import random ;import warnings ; warnings.simplefilter(action='ignore', category=FutureWarning)
+import pandas as pd ; import re
 
 class Morse:
 
@@ -10,17 +11,17 @@ class Morse:
                 , 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
                 , '1', '2', '3', '4', '5', '6', '7', '8', '9', '0',                                       #numbers
                 ',', '.','?','/', '-', '(', ')', '&', ':', ';', '=', '+', '_', "'",'"', '!' , '@', ' '],  #symbols
-    
+
         "Morse":['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.' , '...', '-', 
                 '..-', '...-', '.--', '-..-', '-.--', '--..', '.----', '..---', '...--', '....-', '.....', '-....', '--...', '---..', '----.', '-----', '--..--',
                 '.-.-.-', '..--..', '-..-.', '-....-', '-.--.', '-.--.-', '.-...', '---...', '-.-.-.', '-...-', '.-.-.', '..--.-', '.----.', ".-..-.", '-.-.--', '.--.-.', '|']
     })
 
     url = "https://raw.githubusercontent.com/Abhishek-raj-exe/Morse-Code-Translator/Development/Data_Morse.csv" 
-    dict = pd.read_csv(url,error_bad_lines=False,delim_whitespace=True)  #"" Run these in case the file gets corrupted""  #dict.set_index('Sr', inplace = True); dict.to_csv("Data_Morse.csv",sep="\t",index =True,header=True).
+    dict = pd.read_csv(url,error_bad_lines=False,delim_whitespace=True)  # Run these in case the file gets corrupted  #dict.set_index('Sr', inplace = True); dict.to_csv("Data_Morse.csv",sep="\t",index =True,header=True).
 
     enc_mes = ''
-    
+
     def __init__(self,letters):
         self.letters = letters
         self.dict = dict
@@ -67,8 +68,8 @@ def exit_():
     print("almost there"),(sleep(sec),print(".")),(sleep(sec),print(".")),(sleep(sec),print("."))
     print("Done!!\n\n")
     exit()
-wait,ex = False,False
 
+wait,ex = False,False
 while wait is not True:
     try:
         while ex == False:
@@ -77,21 +78,21 @@ while wait is not True:
                         ex=True;exit_()
                 elif 3 < select or select < 0:
                     print("Invalid selection!!"); continue ; ex=False  
-
-                U_input = input("\nYour message : ")    #..Only Alpha-num and symbols can be entered..
-                p = Morse(U_input) ; Morse.enc_mes = ""
-                if  U_input == "ex()":
-                    exit_()
-                elif U_input == "list()":
-                    print("\n-----Valid input list-----\n")
-                    for i in range(1,len(Mr_str)):
-                        l1,l2 = dict["Morse"][i], dict["Word"][i]
-                        l1c = 6-len(l1)
-                        print(f'{l1+(" "*l1c)}   <==>\t {dict["Word"][i]}\n');i+=1
-                elif U_input == "back()": print("\n\tJust a sec"),(sleep(1));break
-                elif select == 1:
-                    p.Encrypt()
-                elif select == 2:
-                    p.Decrypt()
+                while True:
+                    U_input = input("\nYour message : ")    #..Only Alpha-num and symbols can be entered..
+                    p = Morse(U_input) ; Morse.enc_mes = ""
+                    if  U_input == "ex()":
+                        exit_()
+                    elif U_input == "list()":
+                        print("\n-----Valid input list-----\n")
+                        for i in range(1,len(Mr_str)):
+                            l1,l2 = dict["Morse"][i], dict["Word"][i]
+                            l1c = 6-len(l1)
+                            print(f'{l1+(" "*l1c)}   <==>\t {dict["Word"][i]}\n');i+=1
+                    elif U_input == "back()": print("\n\tJust a sec"),(sleep(1));break
+                    elif select == 1:
+                        p.Encrypt() ; ex=False  
+                    elif select == 2:
+                        p.Decrypt() ; ex=False  
     except(ValueError,IndexError,AttributeError,KeyboardInterrupt,TypeError) as e:
         print("Input is'nt valid!!")
