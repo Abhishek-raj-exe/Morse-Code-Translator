@@ -18,9 +18,8 @@ Storage: 300mb
 
 # Run
 1) For encryption enter the message alpha-num... [ check for supported symbols list ]
-eg:
 
-![Screenshot](url:https://github.com/Abhishek-raj-exe/Morse-Code-Translator/blob/Development/Images/Morse%20SS.jpg)
+![Screenshot](https://github.com/Abhishek-raj-exe/Morse-Code-Translator/blob/Development/Images/Morse%20SS.jpg)
 
 2) For decryption enter the message in morse...(enter every letter with space " " & a word space as "/" or "|")
 input
@@ -36,4 +35,63 @@ Right click on TextBox for Copy/Paste/Selection function
 
 Note: window wont be visible in taskbar , its recommend to toggle with "alt-tab" and hit close in top right corner or kill with taskmanager
 
+# Support List
+-----Valid input list-----
+```
+A    =>   .-
+B    =>   -...
+C    =>   -.-.
+D    =>   -..
+E    =>   .
+F    =>   ..-.
+G    =>   --.
+H    =>   ....
+I    =>   ..
+J    =>   .---
+K    =>   -.-
+L    =>   .-..
+M    =>   --
+N    =>   -.
+O    =>   ---
+P    =>   .--.
+Q    =>   --.-
+R    =>   .-.
+S    =>   ...
+T    =>   -
+U    =>   ..-
+V    =>   ...-
+W    =>   .--
+X    =>   -..-
+Y    =>   -.--
+Z    =>   --..
+1    =>   .----
+2    =>   ..---
+3    =>   ...--
+4    =>   ....-
+5    =>   .....
+6    =>   -....
+7    =>   --...
+8    =>   ---..
+9    =>   ----.
+0    =>   -----
+,    =>   --..--
+.    =>   .-.-.-
+?    =>   ..--..
+/    =>   -..-.
+-    =>   -....-
+(    =>   -.--.
+)    =>   -.--.-
+&    =>   .-...
+:    =>   ---...
+;    =>   -.-.-.
+=    =>   -...-
++    =>   .-.-.
+_    =>   ..--.-
+"    =>   .-..-.
+@    =>   .--.-.
+" "  =>    |
+'    =>   .----.
+!    =>   -.-.--
+$    =>   ...-..-
+```
 
