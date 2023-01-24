@@ -9,22 +9,19 @@ Few special char are also supported , spaces will be represented by "|" in morse
 Orignally written in PyQt6,5 rewritten in Pyside6 for LPGL
 .
 .
-.
 The code was possible with references to https://www.geeksforgeeks.org/morse-code-translator-python/ & https://morsecode.world/ , https://pythonguis.com
 
+# Resources
+
+Ram : min 2gigs (250avg-500max consumption)
+Storage: 300mb
+
 # Run
+1) For encryption enter the message alpha-num... [ check for supported symbols list ]
 
-```
-Your message: "Message to be en/decrypted"
-```
-1) For encryption enter the message alpha-num... [ check for supported symbols list `list()` ]
-eg:
-
-!alt (url:https://github.com/Abhishek-raj-exe/Morse-Code-Translator/blob/Development/Images/Morse%20SS.jpg)
+![Screenshot](https://github.com/Abhishek-raj-exe/Morse-Code-Translator/blob/Development/Images/Morse%20SS.jpg)
 
 2) For decryption enter the message in morse...(enter every letter with space " " & a word space as "/" or "|")
-eg:
-
 input
 ```
 Your message: .. -- / .--- ..- ... - / .- / --. ..- -.-- / .-- .... --- ... / .... . .-. --- / ..-. --- .-. / ..-. ..- -. .-.-.- .-.-.- .-.-.- .-.-.- 
@@ -34,6 +31,67 @@ output (will always be in lowercased)
 im just a guy whos hero for fun....
 ```
 
-The message loop can be broken by `back()` as input &takes back to selection menu or `ex()` to directly exit from loop...`list()` shows the list supported letters & symbols
+Right click on TextBox for Copy/Paste/Selection function
 
-Note: the intro/outro execution can be disabled by commenting out [exit_() on line 82 and 87 & intro on line 66] for quick translation
+Note: window wont be visible in taskbar , its recommend to toggle with "alt-tab" and hit close in top right corner or kill with taskmanager
+
+# Support List
+-----Valid input list-----
+```
+A    =>   .-
+B    =>   -...
+C    =>   -.-.
+D    =>   -..
+E    =>   .
+F    =>   ..-.
+G    =>   --.
+H    =>   ....
+I    =>   ..
+J    =>   .---
+K    =>   -.-
+L    =>   .-..
+M    =>   --
+N    =>   -.
+O    =>   ---
+P    =>   .--.
+Q    =>   --.-
+R    =>   .-.
+S    =>   ...
+T    =>   -
+U    =>   ..-
+V    =>   ...-
+W    =>   .--
+X    =>   -..-
+Y    =>   -.--
+Z    =>   --..
+1    =>   .----
+2    =>   ..---
+3    =>   ...--
+4    =>   ....-
+5    =>   .....
+6    =>   -....
+7    =>   --...
+8    =>   ---..
+9    =>   ----.
+0    =>   -----
+,    =>   --..--
+.    =>   .-.-.-
+?    =>   ..--..
+/    =>   -..-.
+-    =>   -....-
+(    =>   -.--.
+)    =>   -.--.-
+&    =>   .-...
+:    =>   ---...
+;    =>   -.-.-.
+=    =>   -...-
++    =>   .-.-.
+_    =>   ..--.-
+"    =>   .-..-.
+@    =>   .--.-.
+" "  =>    |
+'    =>   .----.
+!    =>   -.-.--
+$    =>   ...-..-
+```
+
