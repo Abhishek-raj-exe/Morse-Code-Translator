@@ -1,5 +1,6 @@
 # Morse-Code-Translator
  A morse code translator made using pyside6.
+ [Download app](https://github.com/Abhishek-raj-exe/Morse-Code-Translator/releases/download/application/Morse-Translator.v1.5-setup.exe)
 
 # About Project:
 
