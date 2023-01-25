@@ -6,7 +6,7 @@
 
 The program translates alpha-numerical letters and sentences to morse code.
 Few special char are also supported , spaces will be represented by "|" in morse.
-
+-
 Orignally written in PyQt6,5 rewritten in Pyside6 for LPGL
 .
 .
@@ -27,7 +27,7 @@ input
 ```
 Your message: .. -- / .--- ..- ... - / .- / --. ..- -.-- / .-- .... --- ... / .... . .-. --- / ..-. --- .-. / ..-. ..- -. .-.-.- .-.-.- .-.-.- .-.-.- 
 ```
-output (will always be in lowercased)
+output will be lowercased
 ```
 im just a guy whos hero for fun....
 ```
