@@ -10,9 +10,12 @@ Few special char are also supported , spaces will be represented by "|" in morse
 Orignally written in PyQt6,5 rewritten in Pyside6 for LPGL
 .
 .
-The code was possible with references to https://morsecode.world/ , https://pythonguis.com
+The code was possible with references to https://www.geeksforgeeks.org/morse-code-translator-python/ & https://morsecode.world/ , https://pythonguis.com
 
+# Resources
 
+Ram : min 2gigs (250avg-500max consumption)
+Storage: 300mb
 
 # Run
 1) For encryption enter the message alpha-num... [ check for supported symbols list ]
@@ -29,8 +32,9 @@ output will be lowercased
 im just a guy whos hero for fun....
 ```
 
+Right click on TextBox for Copy/Paste/Selection function
 
-Note: window wont be visible in taskbar ,toggle with "alt-tab" and hit close or kill with taskmanager
+Note: window wont be visible in taskbar , its recommend to toggle with "alt-tab" and hit close in top right corner or kill with taskmanager
 
 # Support List
 -----Valid input list-----
