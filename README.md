@@ -15,11 +15,11 @@ The code was possible with references to https://morsecode.world/ , https://pyth
 
 
 # Run
-1) For encryption enter the message alpha-num... [ check for supported symbols list ]
+1) For encryption ... [ check for supported symbols list ]
 
 ![Screenshot](https://github.com/Abhishek-raj-exe/Morse-Code-Translator/blob/Development/Images/Morse%20SS.jpg)
 
-2) For decryption enter the message in morse...(enter every letter with space " " & a word space as "/" or "|")
+2) For decryption ...(enter every letter with space " " & a word space as "/" or "|")
 input
 ```
 Your message: .. -- / .--- ..- ... - / .- / --. ..- -.-- / .-- .... --- ... / .... . .-. --- / ..-. --- .-. / ..-. ..- -. .-.-.- .-.-.- .-.-.- .-.-.- 
