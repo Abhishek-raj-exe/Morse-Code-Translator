@@ -30,7 +30,7 @@ im just a guy whos hero for fun....
 ```
 
 
-Note: window wont be visible in taskbar ,toggle with "alt-tab" and hit close or kill with taskmanager
+Note: window wont be visible in taskbar ,toggle with "alt-tab" and hit close or kill with taskmanager if fatal
 
 # Support List
 -----Valid input list-----
